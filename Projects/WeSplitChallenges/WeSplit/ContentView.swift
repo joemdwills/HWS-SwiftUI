@@ -48,11 +48,10 @@ struct ContentView: View {
                 
                 Section {
                     Picker("Tip Percetage", selection: $tipPercentage) {
-                        ForEach(tipPercentages, id: \.self) {
+                        ForEach(0..<101) {
                             Text($0, format: .percent)
                         }
                     }
-                    .pickerStyle(.segmented)
                 } header: {
                     Text("How much tip do you want to leave?")
                 }
@@ -74,7 +73,6 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
-
                     Button("Done") {
                         amountIsFocused = false
                     }
