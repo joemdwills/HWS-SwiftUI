@@ -120,3 +120,27 @@ let taylor = Employee(name: "Taylor Swift")
 taylor.sayHello()
 
 //Checkpoint8
+protocol Building {
+    var name: String { get }
+    var numberOfRooms: Int { get set }
+    var cost: Int { get set }
+    var estateAgent: String { get }
+    
+    func salesSummary()
+}
+
+extension Building {
+    func salesSummary() {
+        print("\(name) with \(numberOfRooms) rooms at a sale price of £\(cost), brought to you by \(estateAgent)")
+    }
+}
+
+struct Home: Building {
+    var name: String
+    var numberOfRooms: Int
+    var cost: Int
+    var estateAgent: String
+}
+
+let house = Home(name: "House", numberOfRooms: 4, cost: 325_000, estateAgent: "Murphy & Sons")
+house.salesSummary()
