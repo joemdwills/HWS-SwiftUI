@@ -9,17 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingAlert = false
+    @State private var showingFinalAlert = false
     @State private var alertTitle = ""
-    @State private var scoreMessage = "Your score is ??"
+    @State private var alertMessage = ""
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var score = 0
+    @State private var attempts = 0
     
     var body: some View {
         ZStack {
-            RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
-                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3)], center: .top, startRadius: 200, endRadius: 700)
+            LinearGradient(colors: [
+                Color(red: 0/255, green: 102/255, blue: 255/255),
+                Color(red: 255/255, green: 122/255, blue: 0/255)],
+                           startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack {
@@ -63,7 +67,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score ???")
+                Text("Score: \(score)")
                     .foregroundColor(.white)
                     .font(.title.bold())
                 
@@ -73,23 +77,50 @@ struct ContentView: View {
             .alert(alertTitle, isPresented: $showingAlert) {
                 Button("Continue", action: askQuestion)
             } message: {
-                Text(scoreMessage)
+                Text(alertMessage)
+            }
+            .alert(alertTitle, isPresented: $showingFinalAlert) {
+                Button("Reset Game", action: resetGame)
+            } message: {
+                Text(alertMessage)
             }
         }
     }
     
     func flagTapped(_ number: Int) {
+        attempts += 1
+        
+        if attempts == 10 {
+            checkFlag(number)
+            alertMessage = "Final score: \(score)/10"
+            showingFinalAlert = true
+        } else {
+            checkFlag(number)
+            showingAlert = true
+        }
+    }
+    
+    func checkFlag(_ number: Int) {
         if number == correctAnswer {
+            score += 1
             alertTitle = "Correct"
+            alertMessage = "Current score: \(score)/\(attempts)"
         } else {
             alertTitle = "Wrong"
+            alertMessage = "That's the flag of \(countries[number])"
         }
-        showingAlert = true
     }
     
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+    }
+    
+    func resetGame() {
+        countries.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+        score = 0
+        attempts = 0
     }
 }
 
