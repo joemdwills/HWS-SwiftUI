@@ -18,6 +18,30 @@ struct ContentView: View {
     @State private var score = 0
     @State private var attempts = 0
     
+//    struct FlagButton: View {
+//        var number: Int
+//        var image: String
+//
+//        var body: some View {
+//            Button {
+//                flagTapped(number)
+//            } label: {
+//                FlagImage(image: image)
+//            }
+//        }
+//    }
+
+    struct FlagImage: View {
+        var image: String
+        
+        var body: some View {
+            Image(image)
+                .renderingMode(.original)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .shadow(radius: 5)
+        }
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [
@@ -46,13 +70,11 @@ struct ContentView: View {
                     .padding(.horizontal, 20)
                     
                     ForEach(0..<3) { number in
+//                        FlagButton(number: number, image: countries[number])
                         Button {
                             flagTapped(number)
                         } label: {
-                            Image(countries[number])
-                                .renderingMode(.original)
-                                .clipShape(RoundedRectangle(cornerRadius: 25))
-                                .shadow(radius: 5)
+                            FlagImage(image: countries[number])
                         }
                         .frame(maxWidth: 250, maxHeight: 150)
                         .background(.regularMaterial)
