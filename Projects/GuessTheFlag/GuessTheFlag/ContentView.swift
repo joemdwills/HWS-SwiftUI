@@ -117,10 +117,9 @@ struct ContentView: View {
     }
     
     func resetGame() {
-        countries.shuffle()
-        correctAnswer = Int.random(in: 0...2)
         score = 0
         attempts = 0
+        askQuestion()
     }
 }
 
