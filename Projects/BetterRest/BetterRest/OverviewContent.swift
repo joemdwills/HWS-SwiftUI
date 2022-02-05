@@ -54,7 +54,7 @@ struct OverviewContent: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct OverviewContent_Previews: PreviewProvider {
     static var previews: some View {
         OverviewContent()
     }
