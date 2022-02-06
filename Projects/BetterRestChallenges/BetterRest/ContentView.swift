@@ -89,36 +89,7 @@ struct ContentView: View {
                 
             }
             .navigationTitle("BetterRest")
-            .toolbar {
-                Button("Calculate", action: calculateBedtime)
-            }
-//            .alert(alertTitle, isPresented: $showingAlert) {
-//                Button("OK") { }
-//            } message: {
-//                Text(alertMessage)
-//            }
         }
-    }
-    
-    func calculateBedtime() {
-        do {
-            let config = MLModelConfiguration()
-            let model = try SleepCalculator(configuration: config)
-            
-            let components = Calendar.current.dateComponents([.hour, .minute], from: wakeUp)
-            let hour = (components.hour ?? 0) * 60 * 60
-            let minute = (components.hour ?? 0) * 60
-            
-            let prediction = try model.prediction(wake: Double(hour + minute), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount))
-            let sleeptime = wakeUp - prediction.actualSleep
-            
-            alertTitle = "Your ideal sleep time is:"
-            alertMessage = sleeptime.formatted(date: .omitted, time: .shortened)
-        } catch {
-            alertTitle = "Error"
-            alertMessage = "Sorry, there was a problem calculating your bedtime."
-        }
-        showingAlert = true
     }
 }
 
