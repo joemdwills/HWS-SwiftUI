@@ -74,7 +74,12 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Text(recommendedBedTime)
+                    HStack(alignment: .center) {
+                        Spacer()
+                        Text(recommendedBedTime)
+                            .font(.largeTitle)
+                        Spacer()
+                    }
                 } header: {
                     Text("Recommended Bed Time:")
                         .font(.headline)
