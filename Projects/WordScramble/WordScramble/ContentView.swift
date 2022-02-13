@@ -17,11 +17,16 @@ struct ContentView: View {
     @State private var score = 0
     @State private var submittedWords = 0
     
+    
     // Error properties
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    struct Answer {
+        var text: String
+        var color: UIColor
+    }
     
     var body: some View {
         NavigationView {
@@ -92,8 +97,18 @@ struct ContentView: View {
         
         submittedWords += 1
         score += (answer.count * submittedWords)
+//        var color = .red
+//
+//        switch answer.count {
+//        case 3:
+//            color = .red
+//        case 4:
+//            color = .green
+//
+//        }
         
         withAnimation {
+//            let submit = Answer(text: answer, color: color)
             usedWords.insert(answer, at: 0)
             newWord = ""
         }
