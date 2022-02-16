@@ -96,14 +96,6 @@ struct ContentView: View {
         }
     }
     
-//    func removePersonalItems(at offsets: IndexSet) {
-//        expenses.personalItems.remove(atOffsets: offsets)
-//    }
-//
-//    func removeBusinessItems(at offsets: IndexSet) {
-//        expenses.businessItems.remove(atOffsets: offsets)
-//    }
-    
     func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
     }
