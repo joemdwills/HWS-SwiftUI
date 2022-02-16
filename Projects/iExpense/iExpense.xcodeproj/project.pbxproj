@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0E2D559327BC659F00D27EB5 /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D559227BC659F00D27EB5 /* iExpenseApp.swift */; };
-		0E2D559527BC659F00D27EB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D559427BC659F00D27EB5 /* ContentView.swift */; };
+		0E2D559527BC659F00D27EB5 /* OverviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D559427BC659F00D27EB5 /* OverviewContent.swift */; };
 		0E2D559727BC65A100D27EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D559627BC65A100D27EB5 /* Assets.xcassets */; };
 		0E2D559A27BC65A100D27EB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D559927BC65A100D27EB5 /* Preview Assets.xcassets */; };
+		0E2D55A327BD22AE00D27EB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D55A227BD22AE00D27EB5 /* ContentView.swift */; };
+		0E2D55A527BD242800D27EB5 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D55A427BD242800D27EB5 /* ExpenseItem.swift */; };
+		0E2D55A727BD247400D27EB5 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D55A627BD247400D27EB5 /* Expenses.swift */; };
+		0E2D55A927BD2A4B00D27EB5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D55A827BD2A4B00D27EB5 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E2D558F27BC659F00D27EB5 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2D559227BC659F00D27EB5 /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
-		0E2D559427BC659F00D27EB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E2D559427BC659F00D27EB5 /* OverviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewContent.swift; sourceTree = "<group>"; };
 		0E2D559627BC65A100D27EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2D559927BC65A100D27EB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E2D55A227BD22AE00D27EB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E2D55A427BD242800D27EB5 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		0E2D55A627BD247400D27EB5 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		0E2D55A827BD2A4B00D27EB5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				0E2D559227BC659F00D27EB5 /* iExpenseApp.swift */,
-				0E2D559427BC659F00D27EB5 /* ContentView.swift */,
+				0E2D55A227BD22AE00D27EB5 /* ContentView.swift */,
+				0E2D55A827BD2A4B00D27EB5 /* AddView.swift */,
+				0E2D55A427BD242800D27EB5 /* ExpenseItem.swift */,
+				0E2D55A627BD247400D27EB5 /* Expenses.swift */,
+				0E2D559427BC659F00D27EB5 /* OverviewContent.swift */,
 				0E2D559627BC65A100D27EB5 /* Assets.xcassets */,
 				0E2D559827BC65A100D27EB5 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2D559527BC659F00D27EB5 /* ContentView.swift in Sources */,
+				0E2D55A727BD247400D27EB5 /* Expenses.swift in Sources */,
+				0E2D559527BC659F00D27EB5 /* OverviewContent.swift in Sources */,
+				0E2D55A927BD2A4B00D27EB5 /* AddView.swift in Sources */,
 				0E2D559327BC659F00D27EB5 /* iExpenseApp.swift in Sources */,
+				0E2D55A327BD22AE00D27EB5 /* ContentView.swift in Sources */,
+				0E2D55A527BD242800D27EB5 /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
