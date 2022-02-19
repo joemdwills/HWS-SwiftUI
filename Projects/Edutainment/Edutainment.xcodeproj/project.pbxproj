@@ -11,6 +11,7 @@
 		0E2D557B27BB123100D27EB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D557A27BB123100D27EB5 /* ContentView.swift */; };
 		0E2D557D27BB123300D27EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D557C27BB123300D27EB5 /* Assets.xcassets */; };
 		0E2D558027BB123300D27EB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D557F27BB123300D27EB5 /* Preview Assets.xcassets */; };
+		0E2D55AD27BDC15800D27EB5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D55AC27BDC15800D27EB5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0E2D557A27BB123100D27EB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E2D557C27BB123300D27EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2D557F27BB123300D27EB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E2D55AC27BDC15800D27EB5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0E2D557827BB123100D27EB5 /* EdutainmentApp.swift */,
 				0E2D557A27BB123100D27EB5 /* ContentView.swift */,
+				0E2D55AC27BDC15800D27EB5 /* Question.swift */,
 				0E2D557C27BB123300D27EB5 /* Assets.xcassets */,
 				0E2D557E27BB123300D27EB5 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2D55AD27BDC15800D27EB5 /* Question.swift in Sources */,
 				0E2D557B27BB123100D27EB5 /* ContentView.swift in Sources */,
 				0E2D557927BB123100D27EB5 /* EdutainmentApp.swift in Sources */,
 			);

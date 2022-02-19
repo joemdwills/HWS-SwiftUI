@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class Question: Codable {
+    let id: Int = 0
+    let practiceNumber: Int
+    let correctAnswer: Int
+    let text: String
+}

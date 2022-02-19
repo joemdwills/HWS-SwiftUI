@@ -15,16 +15,6 @@ import SwiftUI
 //    }
 //}
 
-struct Question: View {
-    var body: some View {
-        VStack {
-            Spacer()
-            Text("")
-            Spacer()
-            TextField
-        }
-    }
-}
 
 struct ContentView: View {
     // State of app
@@ -34,6 +24,8 @@ struct ContentView: View {
     @State private var timestableNumber = 2
     @State private var questionAmount = 5
     @State private var answer = ""
+    
+    @State private var questions = [Question]()
     
 
     var body: some View {
