@@ -20,6 +20,7 @@
 		0E8FE0E627C2B3EF0000EDC5 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE0E527C2B3EE0000EDC5 /* Color-Theme.swift */; };
 		0E8FE0E827C2B83B0000EDC5 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE0E727C2B83B0000EDC5 /* MissionView.swift */; };
 		0E8FE0EA27C2C3770000EDC5 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE0E927C2C3770000EDC5 /* AstronautView.swift */; };
+		0E8FE0EC27C2FB3E0000EDC5 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE0EB27C2FB3E0000EDC5 /* CrewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0E8FE0E527C2B3EE0000EDC5 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		0E8FE0E727C2B83B0000EDC5 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		0E8FE0E927C2C3770000EDC5 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		0E8FE0EB27C2FB3E0000EDC5 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				0E8FE0C727C166A80000EDC5 /* OverviewContent.swift */,
 				0E8FE0D527C2A77C0000EDC5 /* ContentView.swift */,
 				0E8FE0E727C2B83B0000EDC5 /* MissionView.swift */,
+				0E8FE0EB27C2FB3E0000EDC5 /* CrewView.swift */,
 				0E8FE0E927C2C3770000EDC5 /* AstronautView.swift */,
 				0E8FE0E327C2AB520000EDC5 /* Mission.swift */,
 				0E8FE0DF27C2A95A0000EDC5 /* Astronaut.swift */,
@@ -171,6 +174,7 @@
 				0E8FE0E827C2B83B0000EDC5 /* MissionView.swift in Sources */,
 				0E8FE0C827C166A80000EDC5 /* OverviewContent.swift in Sources */,
 				0E8FE0E627C2B3EF0000EDC5 /* Color-Theme.swift in Sources */,
+				0E8FE0EC27C2FB3E0000EDC5 /* CrewView.swift in Sources */,
 				0E8FE0C627C166A80000EDC5 /* MoonshotApp.swift in Sources */,
 				0E8FE0E227C2A9A40000EDC5 /* Bundle-Decodable.swift in Sources */,
 				0E8FE0D627C2A77C0000EDC5 /* ContentView.swift in Sources */,
