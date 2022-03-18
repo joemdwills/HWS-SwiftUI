@@ -105,7 +105,7 @@ struct OverviewContent: View {
     @State var petalOffset = -20.0
     @State var petalWidth = 100.0
     @State private var colorCycle = 0.0
-    @State var viewsToShow = Views.triangle
+    @State private var viewsToShow = Views.triangle
     
     var triangle: some View {
         Path { path in
@@ -166,7 +166,7 @@ struct OverviewContent: View {
         }
     }
     
-    enum Views: String, CaseIterable {
+    private enum Views: String, CaseIterable {
         case triangle = "Triangle"
         case arc = "Arc"
         case circle = "Circle"
@@ -201,6 +201,7 @@ struct OverviewContent: View {
             case .cyclingCircle:
                 cyclingCircle
             }
+            Spacer()
         }
     }
 }
