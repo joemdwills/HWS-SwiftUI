@@ -16,7 +16,7 @@ import SwiftUI
 //}
 
 
-struct ContentView: View {
+struct QuizGeneratorView: View {
     // State of app
     @State private var showQuestions = false
     
@@ -87,9 +87,6 @@ struct ContentView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showQuestions) {
-                QuestionView(question: questions[questionInt])
-            }
         }
     }
 
@@ -119,6 +116,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        QuizGeneratorView()
     }
 }
