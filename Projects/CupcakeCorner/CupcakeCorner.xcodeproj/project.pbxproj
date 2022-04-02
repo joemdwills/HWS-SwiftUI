@@ -15,6 +15,7 @@
 		0EC0351827F90BA000726F29 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0351727F90BA000726F29 /* Response.swift */; };
 		0EC0351A27F90BE200726F29 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0351927F90BE200726F29 /* Result.swift */; };
 		0EC0351C27F90BFE00726F29 /* itunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0351B27F90BFE00726F29 /* itunesAPI.swift */; };
+		0EC0351E27F90F5A00726F29 /* LoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0351D27F90F5A00726F29 /* LoadImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0EC0351727F90BA000726F29 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		0EC0351927F90BE200726F29 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0EC0351B27F90BFE00726F29 /* itunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesAPI.swift; sourceTree = "<group>"; };
+		0EC0351D27F90F5A00726F29 /* LoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				0EC0350827F9068E00726F29 /* ContentView.swift */,
 				0EC0350627F9068E00726F29 /* CupcakeCornerApp.swift */,
 				0EC0351B27F90BFE00726F29 /* itunesAPI.swift */,
+				0EC0351D27F90F5A00726F29 /* LoadImageView.swift */,
 				0EC0350A27F9068F00726F29 /* Assets.xcassets */,
 				0EC0351627F90B4B00726F29 /* Model */,
 				0EC0350C27F9068F00726F29 /* Preview Content */,
@@ -163,6 +166,7 @@
 				0EC0350927F9068E00726F29 /* ContentView.swift in Sources */,
 				0EC0350727F9068E00726F29 /* CupcakeCornerApp.swift in Sources */,
 				0EC0351527F90B0800726F29 /* User.swift in Sources */,
+				0EC0351E27F90F5A00726F29 /* LoadImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
