@@ -19,6 +19,7 @@
 		0EC0352027F911E100726F29 /* ValidFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0351F27F911E100726F29 /* ValidFormView.swift */; };
 		0EC0352327FA390600726F29 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0352227FA390600726F29 /* Order.swift */; };
 		0EC0352527FA3C0600726F29 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0352427FA3C0600726F29 /* AddressView.swift */; };
+		0EC0352727FA3D2400726F29 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0352627FA3D2400726F29 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0EC0351F27F911E100726F29 /* ValidFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidFormView.swift; sourceTree = "<group>"; };
 		0EC0352227FA390600726F29 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0EC0352427FA3C0600726F29 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		0EC0352627FA3D2400726F29 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				0EC0350827F9068E00726F29 /* OrderView.swift */,
 				0EC0352427FA3C0600726F29 /* AddressView.swift */,
+				0EC0352627FA3D2400726F29 /* CheckoutView.swift */,
 				0EC0352227FA390600726F29 /* Order.swift */,
 				0EC0350627F9068E00726F29 /* CupcakeCornerApp.swift */,
 				0EC0350A27F9068F00726F29 /* Assets.xcassets */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC0351C27F90BFE00726F29 /* itunesAPI.swift in Sources */,
+				0EC0352727FA3D2400726F29 /* CheckoutView.swift in Sources */,
 				0EC0351827F90BA000726F29 /* Response.swift in Sources */,
 				0EC0351A27F90BE200726F29 /* Result.swift in Sources */,
 				0EC0352327FA390600726F29 /* Order.swift in Sources */,
