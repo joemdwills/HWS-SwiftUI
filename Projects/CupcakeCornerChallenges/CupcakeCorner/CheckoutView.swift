@@ -13,6 +13,9 @@ struct CheckoutView: View {
     @State private var confimationMessage = ""
     @State private var showingConfirmation = false
     
+    @State private var failedCheckout = false
+    @State private var failedMessage = ""
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -25,7 +28,7 @@ struct CheckoutView: View {
                 }
                 .frame(height: 233)
                 
-                Text("Your total is \(order.cost, format: .currency(code: "USD"))")
+                Text("Your total is \(order.data.cost, format: .currency(code: "USD"))")
                     .font(.title)
                 
                 Button("Place Order") {
@@ -44,6 +47,11 @@ struct CheckoutView: View {
         } message: {
             Text(confimationMessage)
         }
+        .alert("Sorry your order didnt go through", isPresented: $failedCheckout) {
+            Button("OK") { }
+        } message: {
+            Text(failedMessage)
+        }
     }
     
     func placeOrder() async {
@@ -60,8 +68,11 @@ struct CheckoutView: View {
         do {
             let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
-            confimationMessage = "Your order for \(decodedOrder.quantity)x\(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
+            confimationMessage = "Your order for \(decodedOrder.data.quantity)x\(OrderData.types[decodedOrder.data.type].lowercased()) cupcakes is on its way!"
+            showingConfirmation = true
         } catch {
+            failedCheckout = true
+            failedMessage = "Your checkout failed, please try again"
             print("Checkout failed")
         }
     }
