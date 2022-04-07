@@ -9,27 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
+    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    
+    @State private var showingAddScreen = false
     
     var body: some View {
-        VStack {
-            List(students) { student in
-                Text(student.name ?? "Unknown")
+        NavigationView {
+            List {
+                ForEach(books) { book in
+                    NavigationLink {
+                        Text(book.title ?? "Unkown Title")
+                    } label: {
+                        HStack {
+                            EmojiRatingView(rating: book.rating)
+                                .font(.largeTitle)
+                            
+                            VStack(alignment: .leading) {
+                                Text(book.title ?? "Unknown Title")
+                                    .font(.headline)
+                                
+                                Text(book.author ?? "Unknown Author")
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }
+                }
             }
-            
-            Button("Add") {
-                let firstNames = ["Ginny", "Harry", "Hermione", "Luna", "Ron"]
-                let lastNames = ["Granger", "Lovegood", "Potter", "Weasley"]
-                
-                let chosenFirstName = firstNames.randomElement()!
-                let chosenLastName = lastNames.randomElement()!
-                
-                let student = Student(context: moc)
-                student.id = UUID()
-                student.name = "\(chosenFirstName) \(chosenLastName)"
-                
-                try? moc.save()
+            .navigationTitle("Bookworm")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingAddScreen.toggle()
+                    } label: {
+                        Label("Add Book", systemImage: "plus")
+                    }
+                }
             }
+                .sheet(isPresented: $showingAddScreen) {
+                    AddBookView()
+                }
         }
     }
 }
