@@ -36,8 +36,11 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .listRowBackground(Color(book.rating == 1 ? .red : .white).opacity(book.rating == 1 ? 0.5 : 1))
                 }
                 .onDelete(perform: deleteBooks)
+                
+
             }
             .navigationTitle("Bookworm")
             .toolbar {

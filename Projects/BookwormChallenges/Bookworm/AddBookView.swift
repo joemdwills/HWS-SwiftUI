@@ -48,7 +48,7 @@ struct AddBookView: View {
                         newBook.author = author
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
-                        newBook.review = review
+                        newBook.review = review.isEmpty ? "No Review" : review
                         
                         try? moc.save()
                         dismiss()
