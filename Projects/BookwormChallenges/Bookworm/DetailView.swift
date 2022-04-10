@@ -39,6 +39,9 @@ struct DetailView: View {
             Text(book.review ?? "No review")
                 .padding()
             
+            Text(book.date ?? Date.now, style: .date)
+                .font(.caption)
+            
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
         }
