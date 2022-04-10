@@ -52,9 +52,9 @@ struct ContentView: View {
                     }
                 }
             }
-                .sheet(isPresented: $showingAddScreen) {
-                    AddBookView()
-                }
+            .sheet(isPresented: $showingAddScreen) {
+                AddBookView()
+            }
         }
     }
     
