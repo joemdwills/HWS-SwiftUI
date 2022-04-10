@@ -54,9 +54,17 @@ struct AddBookView: View {
                         dismiss()
                     }
                 }
+                .disabled(validBook == false)
             }
             .navigationTitle("Add Book")
         }
+    }
+    
+    var validBook: Bool {
+        if title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || author.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || genre.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return false
+        }
+        return true
     }
 }
 
