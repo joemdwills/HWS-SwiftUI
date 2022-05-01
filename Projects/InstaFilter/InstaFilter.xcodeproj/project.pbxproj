@@ -12,6 +12,11 @@
 		0EBCBF522819F1E00010B72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCBF512819F1E00010B72B /* Assets.xcassets */; };
 		0EBCBF552819F1E00010B72B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCBF542819F1E00010B72B /* Preview Assets.xcassets */; };
 		0EBCBF5C2819F73D0010B72B /* ConfirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF5B2819F73D0010B72B /* ConfirmationDialogView.swift */; };
+		0EBCBF5E281B39260010B72B /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF5D281B39260010B72B /* CoreImageView.swift */; };
+		0EBCBF60281B44830010B72B /* WrappedUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF5F281B44830010B72B /* WrappedUIKit.swift */; };
+		0EBCBF62281B453E0010B72B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF61281B453E0010B72B /* ImagePicker.swift */; };
+		0EBCBF64281CA06F0010B72B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF63281CA06F0010B72B /* ImageSaver.swift */; };
+		0EBCBF66281DA3960010B72B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF65281DA3960010B72B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		0EBCBF512819F1E00010B72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EBCBF542819F1E00010B72B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EBCBF5B2819F73D0010B72B /* ConfirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogView.swift; sourceTree = "<group>"; };
+		0EBCBF5D281B39260010B72B /* CoreImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
+		0EBCBF5F281B44830010B72B /* WrappedUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedUIKit.swift; sourceTree = "<group>"; };
+		0EBCBF61281B453E0010B72B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0EBCBF63281CA06F0010B72B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		0EBCBF65281DA3960010B72B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 				0EBCBF4D2819F1DF0010B72B /* InstaFilterApp.swift */,
 				0EBCBF4F2819F1DF0010B72B /* BindingView.swift */,
 				0EBCBF5B2819F73D0010B72B /* ConfirmationDialogView.swift */,
+				0EBCBF5D281B39260010B72B /* CoreImageView.swift */,
+				0EBCBF5F281B44830010B72B /* WrappedUIKit.swift */,
+				0EBCBF65281DA3960010B72B /* ContentView.swift */,
+				0EBCBF63281CA06F0010B72B /* ImageSaver.swift */,
+				0EBCBF61281B453E0010B72B /* ImagePicker.swift */,
 				0EBCBF512819F1E00010B72B /* Assets.xcassets */,
 				0EBCBF532819F1E00010B72B /* Preview Content */,
 			);
@@ -140,7 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBCBF60281B44830010B72B /* WrappedUIKit.swift in Sources */,
 				0EBCBF502819F1DF0010B72B /* BindingView.swift in Sources */,
+				0EBCBF66281DA3960010B72B /* ContentView.swift in Sources */,
+				0EBCBF5E281B39260010B72B /* CoreImageView.swift in Sources */,
+				0EBCBF64281CA06F0010B72B /* ImageSaver.swift in Sources */,
+				0EBCBF62281B453E0010B72B /* ImagePicker.swift in Sources */,
 				0EBCBF4E2819F1DF0010B72B /* InstaFilterApp.swift in Sources */,
 				0EBCBF5C2819F73D0010B72B /* ConfirmationDialogView.swift in Sources */,
 			);
@@ -274,6 +294,7 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +324,7 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
