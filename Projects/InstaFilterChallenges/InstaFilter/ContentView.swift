@@ -11,7 +11,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var image: Image?
+    
+    // Filter alteration values
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 0.5
+    @State private var filterScale = 0.5
     
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
@@ -29,9 +33,10 @@ struct ContentView: View {
                 ZStack {
                     Rectangle()
                         .fill(.secondary)
+                        .opacity(0.25)
                     
                     Text("Tap to select a picture")
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                         .font(.headline)
                     
                     image?
@@ -44,10 +49,31 @@ struct ContentView: View {
                 
                 HStack {
                     Text("Intensity")
+                    Spacer()
                     Slider(value: $filterIntensity)
                         .onChange(of: filterIntensity) { _ in applyProcessing() }
+                        .frame(width: 250)
+                        .tint(.mint)
                 }
-                .padding()
+                
+                
+                HStack {
+                    Text("Radius")
+                    Spacer()
+                    Slider(value: $filterRadius)
+                        .onChange(of: filterRadius) { _ in applyProcessing() }
+                        .frame(width: 250)
+                        .tint(.indigo)
+                }
+                
+                HStack {
+                    Text("Scale")
+                    Spacer()
+                    Slider(value: $filterScale)
+                        .onChange(of: filterScale) { _ in applyProcessing() }
+                        .frame(width: 250)
+                        .tint(.orange)
+                }
                 
                 HStack {
                     Button("Change Filter") {
@@ -91,9 +117,9 @@ struct ContentView: View {
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey) }
+            currentFilter.setValue(filterRadius * 200, forKey: kCIInputRadiusKey) }
         if inputKeys.contains(kCIInputScaleKey) {
-            currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey) }
+            currentFilter.setValue(filterScale * 10, forKey: kCIInputScaleKey) }
         
         guard let outputImage = currentFilter.outputImage else { return }
         
