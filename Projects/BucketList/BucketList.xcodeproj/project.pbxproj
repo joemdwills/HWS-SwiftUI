@@ -14,6 +14,8 @@
 		0EBCBF822820732C0010B72B /* ComparableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF812820732C0010B72B /* ComparableView.swift */; };
 		0EBCBF84282077690010B72B /* FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF83282077690010B72B /* FileManagerView.swift */; };
 		0EBCBF8628207D2B0010B72B /* EnumSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */; };
+		0EBCBF88282084BB0010B72B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF87282084BB0010B72B /* MapView.swift */; };
+		0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF89282088AA0010B72B /* BiometricView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0EBCBF812820732C0010B72B /* ComparableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableView.swift; sourceTree = "<group>"; };
 		0EBCBF83282077690010B72B /* FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerView.swift; sourceTree = "<group>"; };
 		0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwitchView.swift; sourceTree = "<group>"; };
+		0EBCBF87282084BB0010B72B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0EBCBF89282088AA0010B72B /* BiometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,13 @@
 		0EBCBF72282067110010B72B /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				0EBCBF89282088AA0010B72B /* BiometricView.swift */,
 				0EBCBF73282067110010B72B /* BucketListApp.swift */,
-				0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */,
-				0EBCBF75282067110010B72B /* ContentView.swift */,
 				0EBCBF812820732C0010B72B /* ComparableView.swift */,
+				0EBCBF75282067110010B72B /* ContentView.swift */,
+				0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */,
 				0EBCBF83282077690010B72B /* FileManagerView.swift */,
+				0EBCBF87282084BB0010B72B /* MapView.swift */,
 				0EBCBF77282067130010B72B /* Assets.xcassets */,
 				0EBCBF79282067130010B72B /* Preview Content */,
 			);
@@ -147,9 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBCBF8628207D2B0010B72B /* EnumSwitchView.swift in Sources */,
+				0EBCBF88282084BB0010B72B /* MapView.swift in Sources */,
 				0EBCBF76282067110010B72B /* ContentView.swift in Sources */,
 				0EBCBF74282067110010B72B /* BucketListApp.swift in Sources */,
 				0EBCBF84282077690010B72B /* FileManagerView.swift in Sources */,
+				0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */,
 				0EBCBF822820732C0010B72B /* ComparableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +290,7 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data securely.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +320,7 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data securely.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
