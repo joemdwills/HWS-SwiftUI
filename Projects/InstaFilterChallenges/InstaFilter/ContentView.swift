@@ -97,16 +97,21 @@ struct ContentView: View {
                 Button("Crystallise") { setFilter(CIFilter.crystallize()) }
                 Button("Edges") { setFilter(CIFilter.edges()) }
                 Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
+                Button("Disc Blur") { setFilter(CIFilter.discBlur()) }
                 Button("Pixellate") { setFilter(CIFilter.pixellate()) }
                 Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
                 Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
                 Button("Vignette") { setFilter(CIFilter.vignette()) }
+                Group {
+                    Button("Monochrome") { setFilter(CIFilter.photoEffectMono())}
+                    Button("Invert") { setFilter(CIFilter.colorInvert()) }
+                }
                 Button("Cancel", role: .cancel) { }
             }
         }
     }
                     
-    func setFilter(_ filter: CIFilter) {
+    public func setFilter(_ filter: CIFilter) {
         currentFilter = filter
         loadImage()
     }
