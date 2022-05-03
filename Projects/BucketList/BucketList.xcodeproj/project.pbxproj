@@ -18,6 +18,7 @@
 		0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF89282088AA0010B72B /* BiometricView.swift */; };
 		0EBCBF8D2821C1900010B72B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8C2821C1900010B72B /* Location.swift */; };
 		0EBCBF8F2821C8AC0010B72B /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8E2821C8AB0010B72B /* EditView.swift */; };
+		0EBCBF912821DE250010B72B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF902821DE250010B72B /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		0EBCBF89282088AA0010B72B /* BiometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricView.swift; sourceTree = "<group>"; };
 		0EBCBF8C2821C1900010B72B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0EBCBF8E2821C8AB0010B72B /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		0EBCBF902821DE250010B72B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				0EBCBF8B2821C0700010B72B /* Technique */,
 				0EBCBF73282067110010B72B /* BucketListApp.swift */,
 				0EBCBF75282067110010B72B /* ContentView.swift */,
+				0EBCBF902821DE250010B72B /* Result.swift */,
 				0EBCBF8E2821C8AB0010B72B /* EditView.swift */,
 				0EBCBF8C2821C1900010B72B /* Location.swift */,
 				0EBCBF77282067130010B72B /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				0EBCBF76282067110010B72B /* ContentView.swift in Sources */,
 				0EBCBF74282067110010B72B /* BucketListApp.swift in Sources */,
 				0EBCBF8F2821C8AC0010B72B /* EditView.swift in Sources */,
+				0EBCBF912821DE250010B72B /* Result.swift in Sources */,
 				0EBCBF84282077690010B72B /* FileManagerView.swift in Sources */,
 				0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */,
 				0EBCBF822820732C0010B72B /* ComparableView.swift in Sources */,

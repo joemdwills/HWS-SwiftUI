@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum LoadingState {
+enum LoadingStateTechnique {
     case loading, success, failed
 }
 
@@ -30,7 +30,7 @@ struct FailedView: View {
 }
 
 struct EnumSwitchView: View {
-    var loadingState = LoadingState.loading
+    var loadingState = LoadingStateTechnique.loading
     
     var body: some View {
         switch loadingState {
