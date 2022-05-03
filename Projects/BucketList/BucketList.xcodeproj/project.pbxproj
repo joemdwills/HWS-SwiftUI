@@ -16,6 +16,8 @@
 		0EBCBF8628207D2B0010B72B /* EnumSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */; };
 		0EBCBF88282084BB0010B72B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF87282084BB0010B72B /* MapView.swift */; };
 		0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF89282088AA0010B72B /* BiometricView.swift */; };
+		0EBCBF8D2821C1900010B72B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8C2821C1900010B72B /* Location.swift */; };
+		0EBCBF8F2821C8AC0010B72B /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBF8E2821C8AB0010B72B /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwitchView.swift; sourceTree = "<group>"; };
 		0EBCBF87282084BB0010B72B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0EBCBF89282088AA0010B72B /* BiometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricView.swift; sourceTree = "<group>"; };
+		0EBCBF8C2821C1900010B72B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0EBCBF8E2821C8AB0010B72B /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +65,11 @@
 		0EBCBF72282067110010B72B /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
-				0EBCBF89282088AA0010B72B /* BiometricView.swift */,
+				0EBCBF8B2821C0700010B72B /* Technique */,
 				0EBCBF73282067110010B72B /* BucketListApp.swift */,
-				0EBCBF812820732C0010B72B /* ComparableView.swift */,
 				0EBCBF75282067110010B72B /* ContentView.swift */,
-				0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */,
-				0EBCBF83282077690010B72B /* FileManagerView.swift */,
-				0EBCBF87282084BB0010B72B /* MapView.swift */,
+				0EBCBF8E2821C8AB0010B72B /* EditView.swift */,
+				0EBCBF8C2821C1900010B72B /* Location.swift */,
 				0EBCBF77282067130010B72B /* Assets.xcassets */,
 				0EBCBF79282067130010B72B /* Preview Content */,
 			);
@@ -80,6 +82,18 @@
 				0EBCBF7A282067130010B72B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EBCBF8B2821C0700010B72B /* Technique */ = {
+			isa = PBXGroup;
+			children = (
+				0EBCBF89282088AA0010B72B /* BiometricView.swift */,
+				0EBCBF812820732C0010B72B /* ComparableView.swift */,
+				0EBCBF8528207D2B0010B72B /* EnumSwitchView.swift */,
+				0EBCBF83282077690010B72B /* FileManagerView.swift */,
+				0EBCBF87282084BB0010B72B /* MapView.swift */,
+			);
+			path = Technique;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +168,10 @@
 			files = (
 				0EBCBF8628207D2B0010B72B /* EnumSwitchView.swift in Sources */,
 				0EBCBF88282084BB0010B72B /* MapView.swift in Sources */,
+				0EBCBF8D2821C1900010B72B /* Location.swift in Sources */,
 				0EBCBF76282067110010B72B /* ContentView.swift in Sources */,
 				0EBCBF74282067110010B72B /* BucketListApp.swift in Sources */,
+				0EBCBF8F2821C8AC0010B72B /* EditView.swift in Sources */,
 				0EBCBF84282077690010B72B /* FileManagerView.swift in Sources */,
 				0EBCBF8A282088AA0010B72B /* BiometricView.swift in Sources */,
 				0EBCBF822820732C0010B72B /* ComparableView.swift in Sources */,
