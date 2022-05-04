@@ -71,16 +71,16 @@
 		0EBCBF72282067110010B72B /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
-				0EBCBF8B2821C0700010B72B /* Technique */,
 				0EBCBF73282067110010B72B /* BucketListApp.swift */,
 				0EBCBF75282067110010B72B /* ContentView.swift */,
-				0E6658842822D8C10040CF42 /* FileManage-DocumentsDirectory.swift */,
-				0EBCBF902821DE250010B72B /* Result.swift */,
-				0EBCBF8E2821C8AB0010B72B /* EditView.swift */,
 				0E6658822822D2990040CF42 /* ContentViewModel.swift */,
+				0EBCBF8E2821C8AB0010B72B /* EditView.swift */,
+				0E6658842822D8C10040CF42 /* FileManage-DocumentsDirectory.swift */,
 				0EBCBF8C2821C1900010B72B /* Location.swift */,
+				0EBCBF902821DE250010B72B /* Result.swift */,
 				0EBCBF77282067130010B72B /* Assets.xcassets */,
 				0EBCBF79282067130010B72B /* Preview Content */,
+				0EBCBF8B2821C0700010B72B /* Technique */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
