@@ -52,6 +52,9 @@ struct ContentView: View {
                             Text(item.amount, format: .currency(code: currencyCode!))
                                 .foregroundColor(checkExpense(amount: item.amount))
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("\(item.name), \(currencyCode ?? "USD") \(item.amount)")
+                        .accessibilityHint("Personal Expense")
                     }
                     .onDelete(perform: removeItems)
                 }
@@ -67,6 +70,9 @@ struct ContentView: View {
                             Text(item.amount, format: .currency(code: currencyCode!))
                                 .foregroundColor(checkExpense(amount: item.amount))
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("\(item.name), \(currencyCode ?? "USD") \(item.amount)")
+                        .accessibilityHint("Business Expense")
                     }
                     .onDelete(perform: removeItems)
                 }
