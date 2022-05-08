@@ -12,7 +12,7 @@ import SwiftUI
     @Published var network: [Person]
     
     @Published var selectedImage: UIImage?
-    @Published var name = "Unassigned Name"
+    @Published var selectedName = "Unassigned Name"
     
     @Published var isShowingImagePicker = false
     @Published var showNameAlert = false
@@ -34,8 +34,10 @@ import SwiftUI
         guard let selectedImage = selectedImage else { return }
         
         if let jpegData = selectedImage.jpegData(compressionQuality: 0.8) {
-            let newPerson = Person(id: UUID(), name: name, image: jpegData)
+            let newPerson = Person(id: UUID(), name: selectedName, image: jpegData)
             network.append(newPerson)
+            save()
+            update()
         }
     }
     
@@ -46,5 +48,9 @@ import SwiftUI
         } catch {
             print("Unable to save data")
         }
+    }
+    
+    func update() {
+        network = network.sorted()
     }
 }

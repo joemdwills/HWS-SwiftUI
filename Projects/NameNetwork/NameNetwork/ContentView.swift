@@ -16,18 +16,26 @@ struct ContentView: View {
             ZStack {
                 List {
                     ForEach(viewModel.network, id: \.self) { person in
-                        HStack {
-                            Image(uiImage: (UIImage(data: person.image) ?? viewModel.emptyAvatar)!)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 50, height: 50)
-                                .clipShape(Circle())
-                            
-                            Text(person.name)
+                        NavigationLink {
+                            DetailView(person: person)
+                        } label: {
+                            HStack {
+                                Image(uiImage: (UIImage(data: person.image) ?? viewModel.emptyAvatar)!)
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 50, height: 50)
+                                    .clipShape(Circle())
+                                
+                                Text(person.name)
+                            }
                         }
                     }
                 }
-                
+                .listStyle(.inset)
+                .onAppear() {
+                    UITableView.appearance().backgroundColor = UIColor.white
+                }
+                    
                 VStack(alignment: .center) {
                     Spacer()
                     
@@ -51,19 +59,23 @@ struct ContentView: View {
             }, content: {
                 ImagePicker(image: $viewModel.selectedImage)
             })
-            .alert("What is their name?", isPresented: $viewModel.showNameAlert) {
-                TextField("Name", text: $viewModel.name)
-                Button("Save") {
+            .alert(isPresented: $viewModel.showNameAlert, TextFieldAlert(title: "What is their name?", message: "Save a name so that you can remember them forever", action: { submittedText in
+                if let text = submittedText {
+                    viewModel.selectedName = text
                     viewModel.addPerson()
                 }
-                Button("Cancel", role: .cancel) {
-//                    selectedImage = UIImage()
-                }
-            }
+            }))
         }
+//            .alert("What is their name?", isPresented: $viewModel.showNameAlert) {
+//                TextField("Name", text: $viewModel.name)
+//                Button("Save") {
+//                    viewModel.addPerson()
+//                }
+//                Button("Cancel", role: .cancel) {
+//
+//                }
+//            }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
