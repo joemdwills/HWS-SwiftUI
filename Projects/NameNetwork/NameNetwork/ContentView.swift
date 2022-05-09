@@ -13,9 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack(alignment: .bottom) {
                 List {
-                    ForEach(viewModel.network, id: \.self) { person in
+                    ForEach(viewModel.network, id: \.id) { person in
                         NavigationLink {
                             DetailView(person: person)
                         } label: {
@@ -32,9 +32,9 @@ struct ContentView: View {
                     }
                 }
                 .listStyle(.inset)
-                .onAppear() {
-                    UITableView.appearance().backgroundColor = UIColor.white
-                }
+//                .onAppear() {
+//                    UITableView.appearance().backgroundColor = UIColor.white
+//                }
                     
                 VStack(alignment: .center) {
                     Spacer()
@@ -54,6 +54,16 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("NameNetwork")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        viewModel.locationFetcher.start()
+                        viewModel.locationApproved = true
+                    } label: {
+                        Image(systemName: "location.circle")
+                    }
+                }
+            }
             .fullScreenCover(isPresented: $viewModel.isShowingImagePicker, onDismiss: {
                 viewModel.showNameAlert = true
             }, content: {
@@ -66,6 +76,7 @@ struct ContentView: View {
                 }
             }))
         }
+        .navigationViewStyle(.stack)
 //            .alert("What is their name?", isPresented: $viewModel.showNameAlert) {
 //                TextField("Name", text: $viewModel.name)
 //                Button("Save") {

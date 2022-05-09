@@ -5,8 +5,8 @@
 //  Created by Joe on 03/05/2022.
 //
 
-import Foundation
 import CoreLocation
+import Foundation
 
 struct Location: Identifiable, Codable, Equatable {
     var id: UUID

@@ -17,8 +17,11 @@ import SwiftUI
     @Published var isShowingImagePicker = false
     @Published var showNameAlert = false
     
+    @Published var locationApproved = false
+    
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedNetwork")
     let emptyAvatar = UIImage(systemName: "person.fill")
+    let locationFetcher = LocationFetcher()
     
     
     init() {
@@ -34,7 +37,15 @@ import SwiftUI
         guard let selectedImage = selectedImage else { return }
         
         if let jpegData = selectedImage.jpegData(compressionQuality: 0.8) {
-            let newPerson = Person(id: UUID(), name: selectedName, image: jpegData)
+            var newPerson = Person(id: UUID(), name: selectedName, image: jpegData)
+            
+            if locationApproved {
+                if let location = self.locationFetcher.lastKnownLocation {
+                    newPerson.latitude = location.latitude
+                    newPerson.longitude = location.longitude
+                }
+            }
+            
             network.append(newPerson)
             save()
             update()
