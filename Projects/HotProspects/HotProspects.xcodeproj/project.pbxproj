@@ -12,6 +12,14 @@
 		0E6658E62829C7400040CF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6658E52829C7400040CF42 /* Assets.xcassets */; };
 		0E6658E92829C7400040CF42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6658E82829C7400040CF42 /* Preview Assets.xcassets */; };
 		0E6658F1282C68F90040CF42 /* ExampleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658F0282C68F90040CF42 /* ExampleTabView.swift */; };
+		0E6658F3282D9C250040CF42 /* ManualObservaleObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658F2282D9C250040CF42 /* ManualObservaleObjectView.swift */; };
+		0E6658F5282D9D7F0040CF42 /* ResultTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658F4282D9D7F0040CF42 /* ResultTypeView.swift */; };
+		0E6658F7282D9FEF0040CF42 /* ImageInterpolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658F6282D9FEF0040CF42 /* ImageInterpolationView.swift */; };
+		0E6658F9282DA1D10040CF42 /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658F8282DA1D10040CF42 /* ContextMenuView.swift */; };
+		0E6658FB282DA3920040CF42 /* CustomRowActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658FA282DA3920040CF42 /* CustomRowActionsView.swift */; };
+		0E6658FD282DA4B90040CF42 /* UserNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658FC282DA4B90040CF42 /* UserNotificationsView.swift */; };
+		0E665900282DAC850040CF42 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E6658FF282DAC850040CF42 /* SamplePackage */; };
+		0E665902282DAC960040CF42 /* DependencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E665901282DAC960040CF42 /* DependencyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,13 @@
 		0E6658E52829C7400040CF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E6658E82829C7400040CF42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E6658F0282C68F90040CF42 /* ExampleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTabView.swift; sourceTree = "<group>"; };
+		0E6658F2282D9C250040CF42 /* ManualObservaleObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualObservaleObjectView.swift; sourceTree = "<group>"; };
+		0E6658F4282D9D7F0040CF42 /* ResultTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeView.swift; sourceTree = "<group>"; };
+		0E6658F6282D9FEF0040CF42 /* ImageInterpolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationView.swift; sourceTree = "<group>"; };
+		0E6658F8282DA1D10040CF42 /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
+		0E6658FA282DA3920040CF42 /* CustomRowActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRowActionsView.swift; sourceTree = "<group>"; };
+		0E6658FC282DA4B90040CF42 /* UserNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsView.swift; sourceTree = "<group>"; };
+		0E665901282DAC960040CF42 /* DependencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E665900282DAC850040CF42 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +53,7 @@
 		0E6658D52829C73E0040CF42 = {
 			isa = PBXGroup;
 			children = (
+				0E665901282DAC960040CF42 /* DependencyView.swift */,
 				0E6658E02829C73E0040CF42 /* HotProspects */,
 				0E6658DF2829C73E0040CF42 /* Products */,
 			);
@@ -74,6 +91,12 @@
 			children = (
 				0E6658E32829C73E0040CF42 /* EnvironmentObjectView.swift */,
 				0E6658F0282C68F90040CF42 /* ExampleTabView.swift */,
+				0E6658F2282D9C250040CF42 /* ManualObservaleObjectView.swift */,
+				0E6658F4282D9D7F0040CF42 /* ResultTypeView.swift */,
+				0E6658F6282D9FEF0040CF42 /* ImageInterpolationView.swift */,
+				0E6658F8282DA1D10040CF42 /* ContextMenuView.swift */,
+				0E6658FA282DA3920040CF42 /* CustomRowActionsView.swift */,
+				0E6658FC282DA4B90040CF42 /* UserNotificationsView.swift */,
 			);
 			path = Technique;
 			sourceTree = "<group>";
@@ -94,6 +117,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				0E6658FF282DAC850040CF42 /* SamplePackage */,
+			);
 			productName = HotProspects;
 			productReference = 0E6658DE2829C73E0040CF42 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 0E6658D52829C73E0040CF42;
+			packageReferences = (
+				0E6658FE282DAC850040CF42 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = 0E6658DF2829C73E0040CF42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,9 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6658F5282D9D7F0040CF42 /* ResultTypeView.swift in Sources */,
 				0E6658E42829C73E0040CF42 /* EnvironmentObjectView.swift in Sources */,
+				0E6658F3282D9C250040CF42 /* ManualObservaleObjectView.swift in Sources */,
+				0E6658F7282D9FEF0040CF42 /* ImageInterpolationView.swift in Sources */,
+				0E6658FB282DA3920040CF42 /* CustomRowActionsView.swift in Sources */,
 				0E6658F1282C68F90040CF42 /* ExampleTabView.swift in Sources */,
+				0E6658FD282DA4B90040CF42 /* UserNotificationsView.swift in Sources */,
+				0E665902282DAC960040CF42 /* DependencyView.swift in Sources */,
 				0E6658E22829C73E0040CF42 /* HotProspectsApp.swift in Sources */,
+				0E6658F9282DA1D10040CF42 /* ContextMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E6658FE282DAC850040CF42 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E6658FF282DAC850040CF42 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E6658FE282DAC850040CF42 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E6658D62829C73E0040CF42 /* Project object */;
 }
