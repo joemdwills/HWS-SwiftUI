@@ -13,6 +13,7 @@
 		0E26260428398C7800207ABE /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26260328398C7800207ABE /* Prospect.swift */; };
 		0E2626072839A6F500207ABE /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2626062839A6F500207ABE /* CodeScanner */; };
 		0E262609283D90C400207ABE /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E262608283D90C400207ABE /* ImageSaver.swift */; };
+		0E41C7F1285000B5001397D4 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41C7F0285000B5001397D4 /* FileManager-DocumentsDirectory.swift */; };
 		0E6658E22829C73E0040CF42 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658E12829C73E0040CF42 /* HotProspectsApp.swift */; };
 		0E6658E42829C73E0040CF42 /* EnvironmentObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6658E32829C73E0040CF42 /* EnvironmentObjectView.swift */; };
 		0E6658E62829C7400040CF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6658E52829C7400040CF42 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		0E2626012839661B00207ABE /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		0E26260328398C7800207ABE /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		0E262608283D90C400207ABE /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSaver.swift; path = ../../InstaFilter/InstaFilter/ImageSaver.swift; sourceTree = "<group>"; };
+		0E41C7F0285000B5001397D4 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		0E6658DE2829C73E0040CF42 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6658E12829C73E0040CF42 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		0E6658E32829C73E0040CF42 /* EnvironmentObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				0E6658E52829C7400040CF42 /* Assets.xcassets */,
 				0E6658E72829C7400040CF42 /* Preview Content */,
 				0E6658EF282C5F2E0040CF42 /* Technique */,
+				0E41C7F0285000B5001397D4 /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				0E665902282DAC960040CF42 /* DependencyView.swift in Sources */,
 				0E6658E22829C73E0040CF42 /* HotProspectsApp.swift in Sources */,
 				0E6658F9282DA1D10040CF42 /* ContextMenuView.swift in Sources */,
+				0E41C7F1285000B5001397D4 /* FileManager-DocumentsDirectory.swift in Sources */,
 				0E2626022839661C00207ABE /* MeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
