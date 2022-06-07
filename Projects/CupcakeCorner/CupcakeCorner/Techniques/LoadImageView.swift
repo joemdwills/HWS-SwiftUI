@@ -10,7 +10,7 @@ import SwiftUI
 struct LoadImageView: View {
     var body: some View {
         VStack(spacing: 20) {
-            AsyncImage(url: URL(string: "https://hws.dev/img/logo.png")) { image in
+            AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png")) { image in
                 image
                     .resizable()
                     .scaledToFit()
