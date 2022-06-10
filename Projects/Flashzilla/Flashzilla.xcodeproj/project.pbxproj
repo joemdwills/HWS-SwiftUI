@@ -18,6 +18,11 @@
 		0E434E6228513FEC00CCB64D /* GestureSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6128513FEC00CCB64D /* GestureSequences.swift */; };
 		0E434E642851487900CCB64D /* HapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E632851487900CCB64D /* HapticsView.swift */; };
 		0E434E662851514B00CCB64D /* HitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E652851514B00CCB64D /* HitTestingView.swift */; };
+		0E434E682852A1E300CCB64D /* TriggerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E672852A1E300CCB64D /* TriggerEvents.swift */; };
+		0E434E6A2852A3F900CCB64D /* BackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E692852A3F900CCB64D /* BackgroundApp.swift */; };
+		0E434E6C2852A8AA00CCB64D /* AccessibilitySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6B2852A8AA00CCB64D /* AccessibilitySettings.swift */; };
+		0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6D2853EFCB00CCB64D /* Card.swift */; };
+		0E434E702853F05600CCB64D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6F2853F05600CCB64D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		0E434E6128513FEC00CCB64D /* GestureSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSequences.swift; sourceTree = "<group>"; };
 		0E434E632851487900CCB64D /* HapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsView.swift; sourceTree = "<group>"; };
 		0E434E652851514B00CCB64D /* HitTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestingView.swift; sourceTree = "<group>"; };
+		0E434E672852A1E300CCB64D /* TriggerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerEvents.swift; sourceTree = "<group>"; };
+		0E434E692852A3F900CCB64D /* BackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundApp.swift; sourceTree = "<group>"; };
+		0E434E6B2852A8AA00CCB64D /* AccessibilitySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySettings.swift; sourceTree = "<group>"; };
+		0E434E6D2853EFCB00CCB64D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0E434E6F2853F05600CCB64D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,8 @@
 				0E434E3428513D6200CCB64D /* ContentView.swift */,
 				0E434E3628513D6300CCB64D /* Assets.xcassets */,
 				0E434E3828513D6300CCB64D /* Preview Content */,
+				0E434E6D2853EFCB00CCB64D /* Card.swift */,
+				0E434E6F2853F05600CCB64D /* CardView.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -143,6 +155,9 @@
 				0E434E6128513FEC00CCB64D /* GestureSequences.swift */,
 				0E434E632851487900CCB64D /* HapticsView.swift */,
 				0E434E652851514B00CCB64D /* HitTestingView.swift */,
+				0E434E672852A1E300CCB64D /* TriggerEvents.swift */,
+				0E434E692852A3F900CCB64D /* BackgroundApp.swift */,
+				0E434E6B2852A8AA00CCB64D /* AccessibilitySettings.swift */,
 			);
 			path = Technique;
 			sourceTree = "<group>";
@@ -281,8 +296,13 @@
 				0E434E662851514B00CCB64D /* HitTestingView.swift in Sources */,
 				0E434E6228513FEC00CCB64D /* GestureSequences.swift in Sources */,
 				0E434E3528513D6200CCB64D /* ContentView.swift in Sources */,
+				0E434E682852A1E300CCB64D /* TriggerEvents.swift in Sources */,
 				0E434E3328513D6200CCB64D /* FlashzillaApp.swift in Sources */,
+				0E434E6C2852A8AA00CCB64D /* AccessibilitySettings.swift in Sources */,
+				0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */,
 				0E434E642851487900CCB64D /* HapticsView.swift in Sources */,
+				0E434E702853F05600CCB64D /* CardView.swift in Sources */,
+				0E434E6A2852A3F900CCB64D /* BackgroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,8 +467,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,8 +497,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
