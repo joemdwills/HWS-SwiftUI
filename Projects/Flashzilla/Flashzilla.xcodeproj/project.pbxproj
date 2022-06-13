@@ -23,6 +23,7 @@
 		0E434E6C2852A8AA00CCB64D /* AccessibilitySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6B2852A8AA00CCB64D /* AccessibilitySettings.swift */; };
 		0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6D2853EFCB00CCB64D /* Card.swift */; };
 		0E434E702853F05600CCB64D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6F2853F05600CCB64D /* CardView.swift */; };
+		0E434E722856A3D500CCB64D /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E712856A3D500CCB64D /* EditCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		0E434E6B2852A8AA00CCB64D /* AccessibilitySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySettings.swift; sourceTree = "<group>"; };
 		0E434E6D2853EFCB00CCB64D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0E434E6F2853F05600CCB64D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0E434E712856A3D500CCB64D /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +114,14 @@
 		0E434E3128513D6200CCB64D /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
-				0E434E5C28513D8C00CCB64D /* Technique */,
-				0E434E3228513D6200CCB64D /* FlashzillaApp.swift */,
-				0E434E3428513D6200CCB64D /* ContentView.swift */,
-				0E434E3628513D6300CCB64D /* Assets.xcassets */,
-				0E434E3828513D6300CCB64D /* Preview Content */,
 				0E434E6D2853EFCB00CCB64D /* Card.swift */,
 				0E434E6F2853F05600CCB64D /* CardView.swift */,
+				0E434E3428513D6200CCB64D /* ContentView.swift */,
+				0E434E712856A3D500CCB64D /* EditCards.swift */,
+				0E434E3228513D6200CCB64D /* FlashzillaApp.swift */,
+				0E434E3628513D6300CCB64D /* Assets.xcassets */,
+				0E434E3828513D6300CCB64D /* Preview Content */,
+				0E434E5C28513D8C00CCB64D /* Technique */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				0E434E6C2852A8AA00CCB64D /* AccessibilitySettings.swift in Sources */,
 				0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */,
 				0E434E642851487900CCB64D /* HapticsView.swift in Sources */,
+				0E434E722856A3D500CCB64D /* EditCards.swift in Sources */,
 				0E434E702853F05600CCB64D /* CardView.swift in Sources */,
 				0E434E6A2852A3F900CCB64D /* BackgroundApp.swift in Sources */,
 			);
