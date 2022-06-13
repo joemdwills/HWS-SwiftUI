@@ -11,7 +11,7 @@ struct CardView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColour
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Bool) -> Void)? = nil
     
     @State private var feedback = UINotificationFeedbackGenerator()
     @State private var isShowingAnswer = false
@@ -26,7 +26,7 @@ struct CardView: View {
                 .background(differentiateWithoutColour
                             ? nil
                             : RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .fill(offset == .zero ? .white : offset.width > 0 ? .green : .red)
+                                .fill(using: offset)
                 )
                 .shadow(radius: 10)
             
@@ -65,10 +65,11 @@ struct CardView: View {
                     if abs(offset.width) > 100 {
                         if offset.width > 0 {
                             feedback.notificationOccurred(.success)
+                            removal?(false)
                         } else {
                             feedback.notificationOccurred(.error)
+                            removal?(true)
                         }
-                        removal?()
                     } else {
                         offset = .zero
                     }
@@ -84,5 +85,17 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(card: Card.example)
+    }
+}
+
+extension Shape {
+    func fill(using offset: CGSize) -> some View {
+        if offset.width == 0 {
+            return self.fill(.white)
+        } else if offset.width < 0 {
+            return self.fill(.red)
+        } else {
+            return self.fill(.green)
+        }
     }
 }

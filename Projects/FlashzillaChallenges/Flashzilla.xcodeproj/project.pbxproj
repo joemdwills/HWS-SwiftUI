@@ -24,6 +24,8 @@
 		0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6D2853EFCB00CCB64D /* Card.swift */; };
 		0E434E702853F05600CCB64D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E6F2853F05600CCB64D /* CardView.swift */; };
 		0E434E722856A3D500CCB64D /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E712856A3D500CCB64D /* EditCards.swift */; };
+		0E434E742857E6EF00CCB64D /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E732857E6EF00CCB64D /* FileManager+.swift */; };
+		0E434E762857E78800CCB64D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E752857E78800CCB64D /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		0E434E6D2853EFCB00CCB64D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0E434E6F2853F05600CCB64D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0E434E712856A3D500CCB64D /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
+		0E434E732857E6EF00CCB64D /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		0E434E752857E78800CCB64D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				0E434E3628513D6300CCB64D /* Assets.xcassets */,
 				0E434E3828513D6300CCB64D /* Preview Content */,
 				0E434E5C28513D8C00CCB64D /* Technique */,
+				0E434E732857E6EF00CCB64D /* FileManager+.swift */,
+				0E434E752857E78800CCB64D /* DataManager.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -298,8 +304,10 @@
 				0E434E6028513DB900CCB64D /* TapGestures.swift in Sources */,
 				0E434E662851514B00CCB64D /* HitTestingView.swift in Sources */,
 				0E434E6228513FEC00CCB64D /* GestureSequences.swift in Sources */,
+				0E434E762857E78800CCB64D /* DataManager.swift in Sources */,
 				0E434E3528513D6200CCB64D /* ContentView.swift in Sources */,
 				0E434E682852A1E300CCB64D /* TriggerEvents.swift in Sources */,
+				0E434E742857E6EF00CCB64D /* FileManager+.swift in Sources */,
 				0E434E3328513D6200CCB64D /* FlashzillaApp.swift in Sources */,
 				0E434E6C2852A8AA00CCB64D /* AccessibilitySettings.swift in Sources */,
 				0E434E6E2853EFCB00CCB64D /* Card.swift in Sources */,
