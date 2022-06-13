@@ -26,7 +26,7 @@ struct CardView: View {
                 .background(differentiateWithoutColour
                             ? nil
                             : RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                .fill(offset.width > 0 ? .green : .red)
+                    .fill(offset == .zero ? .white : offset.width > 0 ? .green : .red)
                 )
                 .shadow(radius: 10)
             
@@ -68,7 +68,6 @@ struct CardView: View {
                         } else {
                             feedback.notificationOccurred(.error)
                         }
-                        
                         removal?()
                     } else {
                         offset = .zero
