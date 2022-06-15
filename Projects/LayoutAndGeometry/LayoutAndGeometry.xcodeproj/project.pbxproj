@@ -14,6 +14,9 @@
 		0E434E952857F1DE00CCB64D /* LayoutAndGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E942857F1DE00CCB64D /* LayoutAndGeometryTests.swift */; };
 		0E434E9F2857F1DE00CCB64D /* LayoutAndGeometryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434E9E2857F1DE00CCB64D /* LayoutAndGeometryUITests.swift */; };
 		0E434EA12857F1DE00CCB64D /* LayoutAndGeometryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E434EA02857F1DE00CCB64D /* LayoutAndGeometryUITestsLaunchTests.swift */; };
+		0E5FBA28285A300500BC8802 /* AbsolutePositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */; };
+		0E5FBA2A285A350700BC8802 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */; };
+		0E5FBA2C285A7AD100BC8802 /* ScrollEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		0E434E9A2857F1DE00CCB64D /* LayoutAndGeometryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutAndGeometryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E434E9E2857F1DE00CCB64D /* LayoutAndGeometryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITests.swift; sourceTree = "<group>"; };
 		0E434EA02857F1DE00CCB64D /* LayoutAndGeometryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePositioning.swift; sourceTree = "<group>"; };
+		0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				0E434E832857F1DD00CCB64D /* LayoutAndGeometryApp.swift */,
 				0E434E852857F1DD00CCB64D /* CustomAlignmentGuide.swift */,
+				0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */,
+				0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */,
+				0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */,
 				0E434E872857F1DE00CCB64D /* Assets.xcassets */,
 				0E434E892857F1DE00CCB64D /* Preview Content */,
 			);
@@ -258,6 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E434E862857F1DD00CCB64D /* CustomAlignmentGuide.swift in Sources */,
+				0E5FBA28285A300500BC8802 /* AbsolutePositioning.swift in Sources */,
+				0E5FBA2A285A350700BC8802 /* GeometryReaderView.swift in Sources */,
+				0E5FBA2C285A7AD100BC8802 /* ScrollEffectView.swift in Sources */,
 				0E434E842857F1DD00CCB64D /* LayoutAndGeometryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
