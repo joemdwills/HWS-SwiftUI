@@ -17,6 +17,7 @@
 		0E5FBA28285A300500BC8802 /* AbsolutePositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */; };
 		0E5FBA2A285A350700BC8802 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */; };
 		0E5FBA2C285A7AD100BC8802 /* ScrollEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */; };
+		0E5FBA2E285A819900BC8802 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FBA2D285A819900BC8802 /* ChallengeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePositioning.swift; sourceTree = "<group>"; };
 		0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEffectView.swift; sourceTree = "<group>"; };
+		0E5FBA2D285A819900BC8802 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				0E5FBA27285A300500BC8802 /* AbsolutePositioning.swift */,
 				0E5FBA29285A350700BC8802 /* GeometryReaderView.swift */,
 				0E5FBA2B285A7AD100BC8802 /* ScrollEffectView.swift */,
+				0E5FBA2D285A819900BC8802 /* ChallengeView.swift */,
 				0E434E872857F1DE00CCB64D /* Assets.xcassets */,
 				0E434E892857F1DE00CCB64D /* Preview Content */,
 			);
@@ -268,6 +271,7 @@
 			files = (
 				0E434E862857F1DD00CCB64D /* CustomAlignmentGuide.swift in Sources */,
 				0E5FBA28285A300500BC8802 /* AbsolutePositioning.swift in Sources */,
+				0E5FBA2E285A819900BC8802 /* ChallengeView.swift in Sources */,
 				0E5FBA2A285A350700BC8802 /* GeometryReaderView.swift in Sources */,
 				0E5FBA2C285A7AD100BC8802 /* ScrollEffectView.swift in Sources */,
 				0E434E842857F1DD00CCB64D /* LayoutAndGeometryApp.swift in Sources */,
