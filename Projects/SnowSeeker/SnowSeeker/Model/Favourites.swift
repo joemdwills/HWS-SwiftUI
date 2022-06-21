@@ -12,9 +12,13 @@ class Favourites: ObservableObject {
     private let saveKey = "Favourites"
     
     init() {
-        // load saved data
-        
-        resorts = []
+        let savePath = FileManager.documentsDirectory.appendingPathComponent(saveKey)
+        do {
+            let data = try Data(contentsOf: savePath)
+            resorts = try JSONDecoder().decode(Set<String>.self, from: data)
+        } catch {
+            resorts = []
+        }
     }
     
     func contains(_ resort: Resort) -> Bool {
@@ -33,7 +37,12 @@ class Favourites: ObservableObject {
     }
     
     func save() {
-        // write our data
+        do {
+            let data = try JSONEncoder().encode(resorts)
+            try data.write(to: FileManager.documentsDirectory.appendingPathComponent(saveKey), options: [.atomicWrite, .completeFileProtection])
+        } catch {
+            print("Unable to save data")
+        }
     }
     
 }

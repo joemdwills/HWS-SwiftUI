@@ -27,6 +27,7 @@
 		0E33D2CF285F8C6400D44E0F /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E33D2CE285F8C6400D44E0F /* ResortDetailsView.swift */; };
 		0E33D2D1285F979700D44E0F /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E33D2D0285F979700D44E0F /* Facility.swift */; };
 		0E33D2D3285FA58F00D44E0F /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E33D2D2285FA58F00D44E0F /* Favourites.swift */; };
+		0E33D2D5286125A400D44E0F /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E33D2D4286125A400D44E0F /* FileManager+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		0E33D2CE285F8C6400D44E0F /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		0E33D2D0285F979700D44E0F /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 		0E33D2D2285FA58F00D44E0F /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		0E33D2D4286125A400D44E0F /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				0E33D2C6285F83BD00D44E0F /* Bundle-Decodable.swift */,
 				0E33D2D0285F979700D44E0F /* Facility.swift */,
 				0E33D2D2285FA58F00D44E0F /* Favourites.swift */,
+				0E33D2D4286125A400D44E0F /* FileManager+.swift */,
 				0E33D2C4285F830F00D44E0F /* Resort.swift */,
 			);
 			path = Model;
@@ -316,6 +319,7 @@
 				0E33D2BF285F7F9E00D44E0F /* SearchableView.swift in Sources */,
 				0E33D2D3285FA58F00D44E0F /* Favourites.swift in Sources */,
 				0E33D2BD285F7DAA00D44E0F /* TransparentLayerView.swift in Sources */,
+				0E33D2D5286125A400D44E0F /* FileManager+.swift in Sources */,
 				0E33D2C5285F830F00D44E0F /* Resort.swift in Sources */,
 				0E33D2C7285F83BD00D44E0F /* Bundle-Decodable.swift in Sources */,
 				0E33D2C9285F86F000D44E0F /* WelcomeView.swift in Sources */,
